@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Notepad app</title>
+</head>
+
+<body>
+    <header>
+        <span id="title">untitled Notebook</span>
+        <nav>
+            <div class="drpdwn">
+                <button class="dropbtn" id="fl">File</button>
+                <div class="dropdown-content" id="file">
+                    <a href="#">open</a>
+                    <a href="#">Save</a>
+                    <a href="#">download</a>
+                </div>
+                <button class="dropbtn" id="ins">Insert</button>
+                <div class="dropdown-content" id="insert">
+                    <a href="#">Table</a>
+                    <a href="#">Image</a>
+                    <a href="#">Link</a>
+                    <a href="#">Emoji</a>
+                </div>
+                <button class="dropbtn" id="v">View</button>
+                <div class="dropdown-content" id="view">
+                    <a href="#">Full scrn</a>
+                    <a href="#">show toolbar</a>
+                    <a href="#">more</a>
+                </div>
+                <button id="help">Help</button>
+            </div>
+        </nav>
+    </header>
+    <div id="sidebar">
+        <span id="allnotebooks">All Notebooks</span>
+        <button id="new">new +</button>
+        <div id="notes">
+        </div>
+    </div>
+    <div id="content">
+            <ul id="tasks">
+                <li id="shtoggel">show</li>
+                <li class="sht">
+                    <button id="down">-</button>
+                    <p id="font-size"></p>
+                    <button id="up">+</button>
+                </li>
+                <li class="sht" id="fontclr"> <input id="fclr" type="color" value="#ffffff">font-color</li>
+                <li class="sht" id="bgclr"> <input id="bclr" type="color" value="#3E3E3E">bg-color</li>
+                <li class="sht" id="lessspace"> <button id="bold">B</button></li>
+                <li class="sht" id="lessspace"> <button id="italic">I</button></li>
+                <li class="sht" id="lessspace"> <button id="underline">U</button></li>
+                <li class="sht"> <button id="copy">Copy</button></li>
+                <li class="sht"> <button id="save" style="background-color:green;">Save</button></li>
+            </ul>
+        <div id="textdiv">
+            <textarea type="text" value="Hello World" id="textar"></textarea>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
